@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/index',function(){
+// 	echo '测试';
+// });
+//带参数的路由
+// Route::get('/goods/{id}',function($id){
+// 	echo $id;
+// });
+//后台模块
+Route::resource('pic','admin\picController');
+
